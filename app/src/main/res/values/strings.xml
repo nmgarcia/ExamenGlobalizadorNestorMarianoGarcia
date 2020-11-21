@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ExamenGlobalizadorNestorMarianoGarcia</string>
+    <string name="escribeTuNombreHint">Escribe tu nombre</string>
+    <string name="cualEsTuNombre">Cual es tu nombre?</string>
+    <string name="cualEsTuGenero">Cual es tu genero?</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="otro">Otro</string>
 </resources>

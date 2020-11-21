@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
+    <ImageView
+        android:id="@+id/imgCabecera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/utn01"
+        ></ImageView>
     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTexto"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:text="@string/cualEsTuNombre" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/escribeTuNombreHint"
+        android:inputType="number"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTexto"
+        android:padding="20dp"
+        android:textSize="18sp"
+        android:text="@string/cualEsTuGenero" />
+
+    <RadioGroup
+        android:id="@+id/radiogroupgenero"
+        android:background="@color/colorGris"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/RBmasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/masculino" />
+
+        <RadioButton
+            android:id="@+id/RBfemenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/femenino" />
+
+        <RadioButton
+            android:id="@+id/RBotro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/otro" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnIrAMapa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="@color/colorTexto"
+        android:text="Ir a mapa" />
+</LinearLayout>
